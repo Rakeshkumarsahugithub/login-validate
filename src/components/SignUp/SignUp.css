@@ -1,0 +1,133 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+.signup-card {
+  background: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 900px;
+  min-height: 600px;
+}
+
+.signup-header {
+  background: #24beaa;
+  padding: 30px 20px;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.signup-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.signup-form-container {
+  padding: 50px 40px 40px;
+  background: #2a2a2a;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-row {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.form-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.signup-button {
+  background: #24beaa;
+  color: #2a2a2a;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  align-self: flex-end;
+  min-width: 250px;
+}
+
+.signup-button:hover {
+  background: #38bdf8;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(125, 211, 252, 0.3);
+}
+
+.signup-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 10px;
+  }
+  
+  .signup-card {
+    max-width: 100%;
+    min-height: auto;
+  }
+  
+  .signup-header {
+    padding: 25px 20px;
+  }
+  
+  .signup-header h1 {
+    font-size: 24px;
+  }
+  
+  .signup-form-container {
+    padding: 30px 20px 25px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .signup-form {
+    gap: 15px;
+  }
+  
+  .signup-button {
+    align-self: stretch;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-header h1 {
+    font-size: 20px;
+  }
+  
+  .signup-form-container {
+    padding: 25px 15px 20px;
+  }
+  
+  .form-row {
+    gap: 0;
+  }
+}

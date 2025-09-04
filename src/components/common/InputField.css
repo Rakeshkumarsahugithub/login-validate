@@ -1,0 +1,88 @@
+.input-field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-label {
+  display: block;
+  color: #7c7c7c;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 15px 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #4a4a4a;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input::placeholder {
+  color: #7c7c7c;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-bottom-color: #7dfcf8;
+}
+
+.input-error {
+  border-bottom-color: #ef4444 !important;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #7c7c7c;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: #ffffff;
+}
+
+.error-message {
+  display: block;
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .input {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .input::placeholder {
+    font-size: 12px;
+  }
+  
+  .password-toggle {
+    right: 10px;
+    font-size: 16px;
+  }
+}
